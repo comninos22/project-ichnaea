@@ -1,0 +1,24 @@
+{
+  "name": "client-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "api/client-api/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "client-api:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "client-api:build:development"
+        },
+        "production": {
+          "buildTarget": "client-api:build:production"
+        }
+      }
+    }
+  }
+}
