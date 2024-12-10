@@ -13,7 +13,7 @@ export default function Page() {
         <p className="text-2xl mb-8 max-w-2xl mx-auto text-gray-700">
           Unleash the power of data exploration and analysis
         </p>
-        <div className="flex justify-center max-[433px]:flex-col gap-4">
+        <div className="flex justify-center max-[433px]:flex-col max-[433px]:p-5 gap-4">
           <Button asChild size="lg" variant="default">
             <Link href="/datasets">Explore Datasets <ArrowRight className="ml-2 h-5 w-5" /></Link>
           </Button>
