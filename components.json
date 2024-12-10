@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tailwind": {
+    "config": "./frontend/client-dashboard/tailwind.config.js",
+    "css": "./frontend/client-dashboard/src/app/global.css",
+    "baseColor": "stone",
+    "cssVariables": true
+  },
+  "aliases": {
+    "components": "@project-ichnaea/ui-components/components",
+    "utils": "@project-ichnaea/ui-components/utils",
+    "lib": "@project-ichnaea/lib"
+  }
+}

@@ -19,7 +19,6 @@
     {
       "plugin": "@nx/webpack/plugin",
       "options": {
-        
         "buildTargetName": "build",
         "serveTargetName": "serve",
         "previewTargetName": "preview"
@@ -54,6 +53,9 @@
         "style": "tailwind",
         "linter": "eslint"
       }
+    },
+    "@nx/react": {
+      "library": {}
     }
   }
 }
