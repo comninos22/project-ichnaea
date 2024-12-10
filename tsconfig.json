@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@project-ichnaea/ui-components": ["ui-components/src/index.ts"],
+      "@project-ichnaea/ui-components/*": ["ui-components/src/*"],
+      "@project-ichnaea/lib/utils": ["lib/utils.ts"]
+    }
+  }
+}

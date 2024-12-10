@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@project-ichnaea/ui-components": ["ui-components/src/index.ts"],
+      "@project-ichnaea/ui-components/server": ["ui-components/src/server.ts"],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
