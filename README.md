@@ -77,7 +77,7 @@ It will show tasks that you can run with Nx.
 
 
 
-# Smart Contract, Back-end, Front-end & Development Stack Overview
+# Τεχνολογίες που χρησιμοποιήθηκαν: 
 
 ## Smart Contract
 - **Solidity**: Χρησιμοποιήσαμε Solidity για το smart contract λόγω της ευκολίας στη χρήση, του καλού documentation, και της ταχύτητας ανάπτυξης και υλοποίησης που απαιτήθηκε στον διαγωνισμό, καθώς υπήρχε οικειότητα.
@@ -114,6 +114,9 @@ It will show tasks that you can run with Nx.
 - **simple-git**: Ελαφρύ API για προγραμματιστική χρήση του GIT, επιτρέποντας τη δημιουργία "Git-as-a-service" software.
 - **Ethers.js**: Πλήρες library για το Ethereum σε TypeScript. Χρησιμοποιήθηκε για την αλληλεπίδραση με το smart contract μέσω του Infura.
 
+
+---
+# Άλλες οικίες τεχνολογίες απαραίτητες για την αποπεράτωση του project:
 ---
 
 ## Quality Assurance
