@@ -101,12 +101,12 @@ It will show tasks that you can run with Nx.
 ---
 
 ## Developer Experience
-- **NX**: Monorepo manager για TypeScript/JavaScript. Παρέχει γεννήτριες για Express, Next, e2e testing, unit testing.
+- **NX**: Monorepo manager για TypeScript/JavaScript. Παρέχει generators για Express, Next, e2e testing, unit testing.
 - **GitHub**: Για Version Control System (VCS).
 - **v0**: Χρησιμοποιήθηκε για την παραγωγή pure components και mockups του front-end, διευκολύνοντας την παρουσίαση και την οπτικοποίηση του τελικού προϊόντος.
 - **ChatGPT**: Χρησιμοποιήθηκε ως εργαλείο brainstorming, γρήγορης έρευνας, και παροχής παραδειγμάτων για libraries.
 - **Co-pilot**: Εργαλείο για επαναλαμβανόμενες εργασίες και αύξηση της παραγωγικότητας.
-- **esbuild**: Χρησιμοποιήθηκε για γρήγορο bundling της TypeScript.
+- **webpack**: Χρησιμοποιήθηκε για το bundling της TypeScript.
 
 ---
 
@@ -154,7 +154,7 @@ It will show tasks that you can run with Nx.
 - **Zod**: Για Data Transfer Object validation.
 - **JWT**: Για stateless authorization.
 - **RxJS**: Για async stream pipelines, όπως message processing.
-- **Socket.io**: Για real-time επικοινωνία μεταξύ server και client (π.χ. για notifications).
+- **Socket.io**: Για real-time επικοινωνία server-to-client (π.χ. για notifications).
 
 ---
 
