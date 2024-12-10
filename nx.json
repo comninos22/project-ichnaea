@@ -19,7 +19,6 @@
     {
       "plugin": "@nx/webpack/plugin",
       "options": {
-        
         "buildTargetName": "build",
         "serveTargetName": "serve",
         "previewTargetName": "preview"
@@ -36,7 +35,11 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["api/client-api-e2e/**/*"]
+      "exclude": [
+        "api/client-api-e2e/**/*",
+        "api/tracking-api-e2e/**/*",
+        "api/tracing-api-e2e/**/*"
+      ]
     },
     {
       "plugin": "@nx/next/plugin",

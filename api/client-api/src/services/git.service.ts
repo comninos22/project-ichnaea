@@ -19,7 +19,10 @@ export class GitService {
     this.gitRepoDir = gitRepoDir;
     this.clientFilesDir = clientFilesDir;
     this.branchName = branchName;
-    this.git = simpleGit({ baseDir: gitRepoDir });
+    this.git = simpleGit({
+      config: [`--git-dir=${gitRepoDir}`, `--work-tree=${clientFilesDir}`],
+      baseDir: gitRepoDir,
+    });
   }
 
   async downloadFile(url: string, filePath: string): Promise<string> {

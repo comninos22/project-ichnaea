@@ -76,4 +76,94 @@ It will show tasks that you can run with Nx.
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
 
 
-b0ce 7809 5ee5 3618 c352 f6dc f25f 676f b487 de4f 3d33 b111 464f 6d50 2d19 9060
+
+# Smart Contract, Back-end, Front-end & Development Stack Overview
+
+## Smart Contract
+- **Solidity**: Χρησιμοποιήσαμε Solidity για το smart contract λόγω της ευκολίας στη χρήση, του καλού documentation, και της ταχύτητας ανάπτυξης και υλοποίησης που απαιτήθηκε στον διαγωνισμό, καθώς υπήρχε οικειότητα.
+
+- **Infura**: Παρέχει RPC nodes και λειτουργεί ως γέφυρα μεταξύ Web2 και Web3 για την ανάπτυξη dApps και hybrid apps, όπως στη δική μας περίπτωση.
+
+---
+
+## Back-end
+- **Express**: Ελαφρύ και απλό backend library για Node.js.
+- **Mongoose**: ODM για τη βάση δεδομένων MongoDB. Προτιμήθηκε λόγω της απλότητας στις σχέσεις μεταξύ οντοτήτων, της απόδοσης, της ευκολίας χρήσης, και της δυνατότητας κλιμάκωσης.
+- **RabbitMQ**: Χρησιμοποιήθηκε για ενδο-υπηρεσιακή επικοινωνία, παρέχοντας μεγάλη ευελιξία στον χειρισμό μηνυμάτων, επιβεβαίωση παραλαβής, ανάγνωσης κ.λπ.
+
+---
+
+## Front-end
+- **Next.js**: Για υψηλές επιδόσεις και SEO scores, υποστηρίζοντας SSG, SSR, και SPA.
+- **Tailwind CSS**: Για ευέλικτη και γρήγορη ανάπτυξη UI.
+- **shadcn/ui**: Χρησιμοποιήθηκε για τη δημιουργία βασικών components.
+
+---
+
+## Developer Experience
+- **NX**: Monorepo manager για TypeScript/JavaScript. Παρέχει γεννήτριες για Express, Next, e2e testing, unit testing.
+- **GitHub**: Για Version Control System (VCS).
+- **v0**: Χρησιμοποιήθηκε για την παραγωγή pure components και mockups του front-end, διευκολύνοντας την παρουσίαση και την οπτικοποίηση του τελικού προϊόντος.
+- **ChatGPT**: Χρησιμοποιήθηκε ως εργαλείο brainstorming, γρήγορης έρευνας, και παροχής παραδειγμάτων για libraries.
+- **Co-pilot**: Εργαλείο για επαναλαμβανόμενες εργασίες και αύξηση της παραγωγικότητας.
+- **esbuild**: Χρησιμοποιήθηκε για γρήγορο bundling της TypeScript.
+
+---
+
+## Currently used js libraries
+- **simple-git**: Ελαφρύ API για προγραμματιστική χρήση του GIT, επιτρέποντας τη δημιουργία "Git-as-a-service" software.
+- **Ethers.js**: Πλήρες library για το Ethereum σε TypeScript. Χρησιμοποιήθηκε για την αλληλεπίδραση με το smart contract μέσω του Infura.
+
+---
+
+## Quality Assurance
+- **JMeter**: Για load testing.
+- **jUnit**: Για unit testing.
+- **Cypress**: Για end-to-end testing, με boilerplate generators από το NX.
+
+---
+
+## CI/CD
+- **GitHub Actions**: Για τη δημιουργία CI/CD pipelines.
+
+---
+
+## Deployment & Cloud
+- **Google Cloud**: Χρησιμοποιήθηκε για deployment μέσω του Google Kubernetes Engine και virtual storage για CDN. Γνωρίζουμε και τα αντίστοιχα από DigitalOcean.
+- **Kubernetes & Docker**: Για deployment του backend. Τα containerized microservices μπορούν να κλιμακωθούν ανάλογα με το traffic.
+- **Vercel**: Για deployment του front-end. Παρέχει analytics (π.χ. A/B testing) και ενσωματώνεται με NX + GitHub.
+- **Cloudflare**: Για DNS management, attack mitigation, caching, optimization, και analytics.
+
+---
+
+## Tracing & Observability
+- **Sentry.io**: Για microservice tracing και observability (βασισμένο στο OpenTelemetry).
+
+---
+
+## HTTP Tunneling
+- **Ngrok**: Για HTTP tunneling, επιτρέποντας incoming HTTP/websocket traffic στο localhost development environment.
+
+---
+
+## JavaScript Libraries
+- **i18n**: Για μεταφράσεις του UI.
+- **Zod**: Για Data Transfer Object validation.
+- **JWT**: Για stateless authorization.
+- **RxJS**: Για async stream pipelines, όπως message processing.
+- **Socket.io**: Για real-time επικοινωνία μεταξύ server και client (π.χ. για notifications).
+
+---
+
+## Caching
+- **Redis**: Για γρήγορο in-memory caching (cache aside, function memoization).
+
+---
+
+## Documentation
+- **Swagger**: Για τεχνική τεκμηρίωση (βασισμένο στο OpenAPI, με Zod integration).
+
+---
+
+### Συμπέρασμα
+Οι παραπάνω τεχνολογίες (εκτός από το `simple-git`, το οποίο είναι business logic specific) μας επιτρέπουν να υλοποιήσουμε οποιαδήποτε κλασική Web2 εφαρμογή ή hybrid εφαρμογή με Web3 integrations.

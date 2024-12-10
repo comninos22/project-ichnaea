@@ -1,0 +1,24 @@
+{
+  "name": "tracking-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "api/tracking-api/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "tracking-api:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "tracking-api:build:development"
+        },
+        "production": {
+          "buildTarget": "tracking-api:build:production"
+        }
+      }
+    }
+  }
+}
